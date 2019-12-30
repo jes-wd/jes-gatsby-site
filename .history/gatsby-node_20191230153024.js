@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 exports.createPages = ({boundActionCreators, graphql}) => {
   const {createPage} = boundActionCreators
@@ -28,7 +28,7 @@ exports.createPages = ({boundActionCreators, graphql}) => {
 
     res.data.allMarkdownRemark.edges.forEach(({node}) => {
       createPage({
-        path: node.frontmatter.path,
+        path:node.frontmatter.path,
         component: postTemplate
       })
     })

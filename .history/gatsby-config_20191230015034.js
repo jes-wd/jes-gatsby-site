@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `JES Web Development`,
+    description: `"Web development solutions for Wordpress, Woocommerce and more. Visually appealing, functional, custom sites. Message today for a quote.`,
     author: `@gatsbyjs`,
   },
   plugins: [
@@ -13,17 +13,13 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
         path: `${__dirname}/src/pages`,
       }
     },
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
